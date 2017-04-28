@@ -27,9 +27,9 @@ int main ( int argc, char *argv[]){
 		scanf("%d", &opcion);
 		if(opcion >=1 && opcion <=5){
 			printf("Dame el primer numero:");
-                	scanf("%f",a);
+                	scanf("%f",&a);
                 	printf("Dame el segundo numero:");
-                	scanf("%f",b);
+                	scanf("%f",&b);
 		}
 		switch(opcion){
                 	case 1: 
@@ -57,7 +57,7 @@ int main ( int argc, char *argv[]){
 
 		if(opcion==6){
 			printf("Dame el precio a sacar el iva:");
-			scanf("%f",a);
+			scanf("%f",&a);
 			resultado = iva(a);
 		}
 
