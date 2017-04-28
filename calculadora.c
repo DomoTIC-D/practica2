@@ -23,11 +23,12 @@ int main ( int argc, char *argv[]){
      		printf("5. Potencia\n");
      		printf("6. Porcentaje\n");
      		printf("7. Salir\n");
+		printf("Opcion: ");
 		scanf("%d", &opcion);
 		if(opcion >=1 && opcion <=5){
-			printf("Dame el primer numero\n");
+			printf("Dame el primer numero:");
                 	scanf("%f",a);
-                	printf("Dame el segundo numero\n");
+                	printf("Dame el segundo numero:");
                 	scanf("%f",b);
 		}
 		switch(opcion){
@@ -55,7 +56,7 @@ int main ( int argc, char *argv[]){
 		}
 
 		if(opcion==6){
-			printf("Dame el precio a sacar el iva\n");
+			printf("Dame el precio a sacar el iva:");
 			scanf("%f",a);
 			resultado = iva(a);
 		}
