@@ -41,7 +41,7 @@ int main ( int argc, char *argv[]){
 				funcion = multiplicacion;
 				break;
                		case 4:
-				funcion = potencia;
+				//funcion = potencia;
 				break;
                 	case 5:
 				funcion = division;
