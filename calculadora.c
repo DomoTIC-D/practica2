@@ -14,10 +14,22 @@ int main ( int argc, char *argv[]){
      printf("2. Resta\n");
      printf("3. Multiplicacion\n");
      printf("4. Division\n");
+
      printf("5. Potencia\n");
      printf("6. Porcentaje\n");
 }
 
+float multiplicacion(float a, float b){
+  return a * b;
+}
+
+float suma(float a, float b){
+	return a+b;
+}
+
+float resta ( float a, float b) { 
+        return a-b;
+}
 
 float division(float a, float b) {
     float resultado = a / b; //a: dividendo; b:divisor
