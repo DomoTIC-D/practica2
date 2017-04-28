@@ -42,7 +42,8 @@ int main ( int argc, char *argv[]){
 				funcion = multiplicacion;
 				break;
                		case 4:
-				//funcion = potencia;
+
+				funcion = potencia;
 				break;
                 	case 5:
 				funcion = division;
@@ -85,7 +86,33 @@ float division(float a, float b) {
 }
 
 
+float potencia(float a, float b){
+    
+    float resultado=a;
+    int i;
+    for (i=0;i<b-1;i++)
+    {
+        resultado=multiplicacion(resultado,a);
+        
+        }
+    
+    return resultado;
+    
+}
+
+float peseta2euro(float x){
+    return multiplicacion(x,0.00601012);
+}
+
+float euro2peseta(float x){
+    return multiplicacion(x,(division(1,0.00601012)));
+}
+    
+float iva(float a){
+  return a * 0.21;
+}
 
 float iva(float a){
   return a * 0.21;
 }
+
