@@ -17,3 +17,8 @@ int main ( int argc, char *argv[]){
      printf("5. Potencia\n");
      printf("6. Porcentaje\n");
 }
+
+float division(float a, float b) {
+    float resultado = a / b; //a: dividendo; b:divisor
+    return resultado;
+}
