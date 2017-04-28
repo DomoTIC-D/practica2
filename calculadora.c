@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 float suma(float a, float b);
 float resta(float a, float b);
@@ -22,12 +23,13 @@ int main ( int argc, char *argv[]){
      		printf("5. Potencia\n");
      		printf("6. Porcentaje\n");
      		printf("7. Salir\n");
+		printf("Opcion: ");
 		scanf("%d", &opcion);
 		if(opcion >=1 && opcion <=5){
-			printf("Dame el primer numero\n");
-                	scanf("%f",a);
-                	printf("Dame el segundo numero\n");
-                	scanf("%f",b);
+			printf("Dame el primer numero:");
+                	scanf("%f",&a);
+                	printf("Dame el segundo numero:");
+                	scanf("%f",&b);
 		}
 		switch(opcion){
                 	case 1: 
@@ -54,8 +56,8 @@ int main ( int argc, char *argv[]){
 		}
 
 		if(opcion==6){
-			printf("Dame el precio a sacar el iva\n");
-			scanf("%f",a);
+			printf("Dame el precio a sacar el iva:");
+			scanf("%f",&a);
 			resultado = iva(a);
 		}
 
@@ -82,10 +84,6 @@ float division(float a, float b) {
     return resultado;
 }
 
-float multiplicacion(float a, float b){
-  return a * b;
-}
-
 float potencia(float a, float b){
     
     float resultado=a;
@@ -108,7 +106,7 @@ float euro2peseta(float x){
     return multiplicacion(x,(division(1,0.00601012)));
 }
     
-	
+
 float iva(float a){
   return a * 0.21;
 }
