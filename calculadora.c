@@ -30,3 +30,17 @@ float resta ( float a, float b) {
         return a-b;
 }
 
+float potencia(float a, float b){
+    
+    float resultado=a;
+    int i;
+    for (i=0;i<b-1;i++)
+    {
+        resultado=multiplicacion(resultado,a);
+        
+        }
+    
+    return resultado;
+    
+    }
+
