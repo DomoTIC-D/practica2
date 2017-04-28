@@ -99,6 +99,15 @@ float potencia(float a, float b){
     return resultado;
     
 }
+
+float peseta2euro(float x){
+    return multiplicacion(x,0.00601012);
+}
+
+float euro2peseta(float x){
+    return multiplicacion(x,(division(1,0.00601012)));
+}
+    
 	
 float iva(float a){
   return a * 0.21;
