@@ -83,9 +83,7 @@ float division(float a, float b) {
     return resultado;
 }
 
-float multiplicacion(float a, float b){
-  return a * b;
-}
+
 
 float iva(float a){
   return a * 0.21;
