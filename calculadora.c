@@ -112,7 +112,4 @@ float iva(float a){
   return a * 0.21;
 }
 
-float iva(float a){
-  return a * 0.21;
-}
 
