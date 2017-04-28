@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 float suma(float a, float b);
 float resta(float a, float b);
